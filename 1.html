@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1</title>
+</head>
+
+<body>
+    <header>
+        <H1>Biodata</H1>
+    </header>
+    <main>
+
+    </main>
+    <script type="text/javascript">
+        let Biodata = {
+            "Name": "Marvin Daniel Pekuwali",
+            "Address": "RSS Baumata, Kupang-NTT",
+            "Hobbies": ["Sepak Bola", "Belajar", "Musik"],
+            "is_married": false,
+            "school": {
+                "highSchool": "SMA Negeri 4 Kupang",
+                "university": "Universitas Nusa Cendana"
+            },
+            "skills": [{
+                    "name": "HTML",
+                    "score": 90
+                },
+                {
+                    "name": "CSS",
+                    "score": 90
+                },
+                {
+                    "name": "JavaScript",
+                    "score": 80
+                },
+                {
+                    "name": "PHP",
+                    "score": 85
+                }
+            ]
+        }
+
+        let isi = document.querySelector('main');
+        isi.innerHTML = JSON.stringify(Biodata);
+        console.log(JSON.stringify(Biodata));
+    </script>
+</body>
+
+</html>
