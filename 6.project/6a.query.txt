@@ -1,0 +1,1 @@
+SELECT users.name AS name_programmer, count(*) as jumlah_skill FROM users,skills WHERE users.id =skills.user_id GROUP BY users.name Order By users.id;
